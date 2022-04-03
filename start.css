@@ -1,0 +1,131 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url('2416004.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#startmodal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.op1{
+    opacity: 1 !important;
+}
+
+.hid{
+    visibility: hidden;
+}
+
+#modaltext{
+    border: 2px solid white;
+    width: 100vw;
+    text-align: center;
+    color: beige;
+    font-size: 60px;
+    background-color: black;
+}
+
+#container{
+    position: relative;
+    opacity: 0.5;
+}
+
+#home{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.bi-house{
+    position: fixed;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    color: beige;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bi-house:hover{
+    background: rgba(72, 69, 69, 0.5);
+}
+
+.rod{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.rod div{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#rod1{
+    width: 200px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: orange;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+}
+
+#midscorebar{
+    height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 30vh;
+}
+
+#p1score,#p2score{
+    font-size: 50px;
+    color: bisque;
+    margin: 20px;
+}
+
+#mid-bar{
+    border-top: 4px dashed white;
+    width: 100vw;
+}
+
+#ball{
+    position: absolute;
+    left: 60%;
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#rod2{
+    width: 200px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: green;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+}

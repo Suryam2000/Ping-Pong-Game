@@ -1,0 +1,175 @@
+body{
+    
+    background-image: url('black-triangular-abstract-background-grunge-260nw-736870894.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#game-title{
+    font-size: 90px;
+    font-weight: 700;
+    color: beige;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 22px 70px 4px;
+}
+
+.rainbow-text {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #ed3d42 26.666%, 
+      #b24629 26.666%, 
+      #e97758 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 40%, 
+      #8B9862 70%, 
+      #8B9862 46.666%, 
+      #07b5e4 66.666%, 
+      #3c84bb 43.333%, 
+      #599e4d 73.333%);
+    
+    background-size: 57%;
+    background-repeat: repeat;
+    background-clip: text;
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+  }
+
+
+  .rainbow-text:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+  }
+  
+  @keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 100%;
+      background-position: -9em 1em;
+    }
+  }
+  
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }
+
+
+#Player-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    height: 30vh;
+}
+
+input{
+    width: 30%;
+    height: 30px;
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(210, 210, 210);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+input:focus{
+    box-shadow: rgba(234, 234, 234, 0.35) 0px 5px 10px;
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: black;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#btn{
+    width: 15%;
+    height: 40px;
+    border-radius: 12px;
+    padding: 5px;
+    color: beige;
+    background-color: black;
+    border: 2px solid white;
+    font-size: 15px;
+    margin-top: 20px;
+  
+    background-image: linear-gradient(
+        45deg,
+        #000000 50%,
+        #ffffff 50%
+    );
+    
+    background-size: 270%;
+    background-repeat: repeat;
+    background-position: top right;
+
+  
+    animation: button-animation 0.4s 0.15s ease-out forwards;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-color: beige;
+    color: #000000;
+    border: 3px solid black;
+    box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    animation: button-animation-rev 0.4s ease-out forwards;
+}
+
+@keyframes button-animation {
+    0% {
+      background-position: top right;
+    }
+    100% {
+      background-position: top left;
+    }
+  }
+  
+  @keyframes button-animation-rev {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
