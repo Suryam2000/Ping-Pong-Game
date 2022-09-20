@@ -32,8 +32,8 @@ p1rod.textContent = localStorage.getItem("p1name");
 p2rod.textContent = localStorage.getItem("p2name");
 
 let whichRod;
-let moveX = 6;
-let moveY = 6;
+let moveX = 10;
+let moveY = 10;
 let ballMotion;
 let border = 12;
 let score;
@@ -64,19 +64,19 @@ localStorage.setItem(storeName,"null");
 
 document.addEventListener('keydown', (e) => {
     if(e.keyCode == 37 || e.which == 37){
-        speedrod1 = -10;
+        speedrod1 = -20;
     }
 
     if(e.keyCode == 39 || e.which == 39){
-        speedrod1 = 10;
+        speedrod1 = 20;
     }
 
     if(e.keyCode == 65 || e.which == 65){
-        speedrod2 = -10;
+        speedrod2 = -20;
     }
 
     if(e.keyCode == 68 || e.which == 68){
-        speedrod2 = 10;
+        speedrod2 = 20;
     }
   });
 
