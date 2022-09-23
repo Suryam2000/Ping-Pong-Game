@@ -32,8 +32,8 @@ p1rod.textContent = localStorage.getItem("p1name");
 p2rod.textContent = localStorage.getItem("p2name");
 
 let whichRod;
-let moveX = 10;
-let moveY = 10;
+let moveX = 8;
+let moveY = 8;
 let ballMotion;
 let border = 12;
 let score;
